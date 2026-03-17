@@ -1,20 +1,20 @@
-# 🧠 Brain Tumor Detection using Deep Learning (VGG19)
+#  Brain Tumor Detection using Deep Learning (VGG19)
 
-## 📌 Overview
+##  Overview
 
 This project implements a **brain tumor classification system** using
 MRI images and a **deep learning model based on VGG19**. The model
 classifies images into:
 
--   🟢 **Non-tumorous**
--   🔴 **Tumorous**
+-    **Non-tumorous**
+-    **Tumorous**
 
 The pipeline includes **data preprocessing, augmentation, model
 training, evaluation, and prediction**.
 
 ------------------------------------------------------------------------
 
-## 🎯 Objectives
+## Objectives
 
 -   Detect brain tumors from MRI scans
 -   Handle dataset imbalance using augmentation
@@ -23,7 +23,7 @@ training, evaluation, and prediction**.
 
 ------------------------------------------------------------------------
 
-## 📂 Dataset
+##  Dataset
 
 The dataset consists of MRI images divided into:
 
@@ -33,9 +33,9 @@ The dataset consists of MRI images divided into:
 
 ------------------------------------------------------------------------
 
-## 🔄 Workflow
+##  Workflow
 
-### 1️⃣ Data Preparation
+### 1️ Data Preparation
 
 -   Extract dataset from ZIP file
 -   Rename images for consistency
@@ -43,7 +43,7 @@ The dataset consists of MRI images divided into:
 
 ------------------------------------------------------------------------
 
-### 2️⃣ Data Augmentation
+### 2️ Data Augmentation
 
 To reduce imbalance: - Rotation - Flipping (horizontal & vertical) -
 Brightness adjustment - Shifting & shearing
@@ -56,7 +56,7 @@ Augmented data is stored in:
 
 ------------------------------------------------------------------------
 
-### 3️⃣ Preprocessing
+### 3 Preprocessing
 
 Each image undergoes: - Grayscale conversion - Gaussian blur (noise
 reduction) - Thresholding (Otsu method) - Erosion & dilation - Tumor
@@ -64,7 +64,7 @@ region cropping
 
 ------------------------------------------------------------------------
 
-### 4️⃣ Data Loading
+### 4️ Data Loading
 
 -   Resize images to **240 × 240**
 -   Normalize pixel values
@@ -74,7 +74,7 @@ region cropping
 
 ------------------------------------------------------------------------
 
-### 5️⃣ Data Splitting
+### 5️ Data Splitting
 
 Dataset is split into:
 
@@ -85,14 +85,14 @@ Dataset is split into:
 
 ------------------------------------------------------------------------
 
-## 🧠 Model Architecture
+##  Model Architecture
 
-### 🔹 Base Model
+###  Base Model
 
 -   **VGG19 (Pre-trained on ImageNet)**
 -   Frozen convolutional layers
 
-### 🔹 Custom Layers
+###  Custom Layers
 
 -   Flatten layer
 -   Dense (4608 units, ReLU)
@@ -102,7 +102,7 @@ Dataset is split into:
 
 ------------------------------------------------------------------------
 
-## ⚙️ Training Configuration
+##  Training Configuration
 
 -   Optimizer: **SGD**
 -   Loss: **Categorical Crossentropy**
@@ -110,13 +110,13 @@ Dataset is split into:
 
 ### Callbacks:
 
--   ⏹️ EarlyStopping
--   💾 ModelCheckpoint
--   📉 ReduceLROnPlateau
+-   EarlyStopping
+-   ModelCheckpoint
+-   ReduceLROnPlateau
 
 ------------------------------------------------------------------------
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 -   Accuracy
 -   Precision
@@ -126,7 +126,7 @@ Dataset is split into:
 
 ------------------------------------------------------------------------
 
-## 📈 Results Visualization
+##  Results Visualization
 
 -   Training vs Validation Accuracy
 -   Training vs Validation Loss
@@ -134,7 +134,7 @@ Dataset is split into:
 
 ------------------------------------------------------------------------
 
-## 🔍 Prediction
+##  Prediction
 
 You can classify a new MRI image:
 
@@ -148,7 +148,7 @@ Output:
 
 ------------------------------------------------------------------------
 
-## 🛠️ Requirements
+##  Requirements
 
 Install dependencies using:
 
@@ -158,7 +158,7 @@ pip install numpy pandas matplotlib seaborn opencv-python tensorflow scikit-lear
 
 ------------------------------------------------------------------------
 
-## 🚀 How to Run
+##  How to Run
 
 1.  Upload dataset ZIP file\
 2.  Run the notebook/script step by step\
@@ -168,16 +168,16 @@ pip install numpy pandas matplotlib seaborn opencv-python tensorflow scikit-lear
 
 ------------------------------------------------------------------------
 
-## 📌 Key Highlights
+##  Key Highlights
 
--   ✅ Transfer Learning with VGG19\
--   ✅ Custom preprocessing (tumor cropping)\
--   ✅ Data augmentation for imbalance\
--   ✅ Comprehensive evaluation
+-    Transfer Learning with VGG19\
+-    Custom preprocessing (tumor cropping)\
+-    Data augmentation for imbalance\
+-    Comprehensive evaluation
 
 ------------------------------------------------------------------------
 
-## ⚠️ Limitations
+## Limitations
 
 -   Requires large dataset for better generalization\
 -   Cropping may fail on unclear images\
@@ -185,7 +185,7 @@ pip install numpy pandas matplotlib seaborn opencv-python tensorflow scikit-lear
 
 ------------------------------------------------------------------------
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 -   Use more advanced architectures (ResNet, EfficientNet)
 -   Add multi-class tumor classification
@@ -194,13 +194,13 @@ pip install numpy pandas matplotlib seaborn opencv-python tensorflow scikit-lear
 
 ------------------------------------------------------------------------
 
-## 📜 License
+##  License
 
 This project is for educational and research purposes.
 
 ------------------------------------------------------------------------
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 -   TensorFlow & Keras
 -   OpenCV
@@ -208,6 +208,6 @@ This project is for educational and research purposes.
 
 ------------------------------------------------------------------------
 
-## 📧 Contact
+##  Contact
 
 For questions or contributions, feel free to reach out!
